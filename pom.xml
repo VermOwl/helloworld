@@ -7,11 +7,12 @@
     <groupId>org.example</groupId>
     <artifactId>helloworld</artifactId>
     <version>1.0-SNAPSHOT</version>
+
     <repositories>
         <repository>
             <id>central</id>
             <name>Maven Plugin Repository</name>
-            <url>http://repo1.maven.org/maven2</url>
+            <url>https://repo1.maven.org/maven2</url>
             <layout>default</layout>
             <snapshots>
                 <enabled>false</enabled>
@@ -21,10 +22,15 @@
             </releases>
         </repository>
     </repositories>
-    <dependency>
-        <groupId>org.seleniumhq.selenium</groupId>
-        <artifactId>selenium-java</artifactId>
-        <version>3.141.5</version>
-    </dependency>
+    <dependencies>
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+    </dependencies>
+
+
+
 
 </project>
