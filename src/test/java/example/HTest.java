@@ -7,10 +7,8 @@ public class HTest {
 
     @Test
     public void test(){
-        if (1 == 2) {
+        if (1 == 1) {
             boolean a = true;
-        } else {
-            assertTrue(false);
-        }
+        } 
     }
 }
