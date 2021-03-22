@@ -1,0 +1,25 @@
+# Dockerfile
+
+# base image
+FROM ubuntu:18.04
+
+# install packages
+RUN apt-get update && \
+    apt-get install -y curl \
+    wget \
+    openjdk-8-jdk \
+    git \
+    maven 
+
+ENV JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64/jre"
+
+
+# CMD надо дописать комманды + проверить их после выполенния
+CMD mvn install
+#ENTRYPOINT ["git", "clone", "https://github.com/VermOwl/helloworld.git"]
+#WORKDIR helloworld
+#CMD git clone https://github.com/VermOwl/helloworld.git
+#    cd .. \ 
+#    rm -rf helloworld \
+
+# export GIT_SSL_NO_VERIFY=1
